@@ -28,4 +28,43 @@ public static void mostrar_matriz (int matriz[][]) {
 		System.out.println();
 }
 }
+public static boolean es_cero(int matriz[][]) {
+	boolean escero = true;
+	
+	for (int i=0;  i<matriz.length; i++) {
+		for(int j=0;j<matriz[0].length;j++) {
+			if (matriz[i][j]!=0) {
+				escero=false;
+			}
+		}
+	}
+	return escero;
+
+		}
+
+public static int es_igual_a(int matriz[][], int a) {
+	int contador=0;
+	for (int i=0; i< matriz.length; i++) {
+		for(int j=0; j<matriz[0].length; j++) {
+			if(matriz[i][j]==a) {
+				contador++;
+			}
+		}
+	}
+	return contador;
+}
+
+public static boolean esTriangularSup(int matriz[][]) {
+	boolean escero = true;
+	
+	for (int i=1;  i<matriz.length; i++) {
+		for(int j=0;j<i;j++) {
+			if (matriz[i][j]!=0) {
+				escero=false;
+			}
+		}
+	}
+	return escero;
+
+		}
 }
