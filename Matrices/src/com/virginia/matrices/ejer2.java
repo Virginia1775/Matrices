@@ -33,7 +33,7 @@ public class ejer2 {
 			System.out.println("Son todos ceros");
 		}
 		else {
-			System.out.println("Alguno diferente de cero");
+			System.out.println("Alguno diferente de cero ");
 		}
 	}
 	   
